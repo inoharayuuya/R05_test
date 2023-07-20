@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>z11_課題1</title>
 </head>
+
 <body>
     <img src="img/ooyama.jpg">
     <hr>
     <p>
-            <h1>大山アンケート</h1>
-            氏名<br>
+    <h1>大山アンケート</h1>
+    <form action="#" method="post">
+        氏名<br>
+        <input type="text" name="simei">
+        <br><br>
+
+        性別
+        <input type="radio" name="seibetu" value="otoko" checked>男
+        <input type="radio" name="seibetu" value="onna">女
+        <input type="radio" name="seibetu" value="humei">不明
+        <br><br>
+        
+        年齢
+        <select name="nenrei">
+            <option value="9歳以下">９歳以下</option>
+            <option value="10代">10代</option>
+            <option value="20代" selected>20代</option>
+            <option value="30代">30代</option>
+            <option value="40代">40代</option>
+            <option value="50代">50代</option>
+            <option value="60歳以上">60歳以上</option>
+        </select>
+        <br><br>
+
+        希望のコース(複数選択可)<br>
+        <input type="checkbox" name="course" value="course1">コース1
+        <input type="checkbox" name="course" value="course2">コース2
+        <input type="checkbox" name="course" value="course3">コース3
+        <input type="checkbox" name="course" value="course4">コース4
+        <input type="checkbox" name="course" value="course5">コース5
+        <br><br>
+
+        ご意見を記入してください<br>
+        <textarea name="iken" rows="10" cols="50"></textarea>
+        <br><br>
+
+        <input type="submit" value="送信">
+        <input type="reset"  value="消去">
+        <hr>
+        <h1>アンケート記入のお願い</h1><br>
+        <li>すべての項目を入力してください。</li>
+        <li>入力後、送信ボタンをクリックしてください。</li>
+        <li>取り消す場合は、消去ボタンをクリックしてください。</li>
+    </form>
     </p>
 </body>
+
 </html>
