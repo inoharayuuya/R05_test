@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+img{
+    max-width: 90%;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+header h2{
+    background-color: white;
+}
+
+ul{
+    display: flex;
+}
+
+a:link{
+    color: aliceblue;
+}
+
+/*768px～の設定*/
+@media screen and (min-width:768px) {}
+
+/*1024px～の設定*/
+@media screen and (min-width:1024px) {}
